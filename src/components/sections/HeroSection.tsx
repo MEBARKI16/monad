@@ -9,7 +9,7 @@ const HeroSection = () => {
   const [style, setStyle] = useState({});
 
   // This function updates the transform origin based on mouse position
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (any e) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
     const x = ((e.pageX - left) / width) * 100;
     const y = ((e.pageY - top) / height) * 100;
