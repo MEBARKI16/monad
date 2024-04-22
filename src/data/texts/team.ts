@@ -14,5 +14,5 @@ export const teamMembers = [
     role: "Product Manager",
     description: "",
   },
-  { avatar: "", name: "Zinedine Ait-Abdelmalek", role: "", description: "" },
+  { avatar: "", name: "Zinedine Ait-Abdelmalek", role: "Lead Developer", description: "" },
 ];
