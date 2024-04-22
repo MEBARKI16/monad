@@ -9,7 +9,7 @@ const HeroSection = () => {
   const [style, setStyle] = useState({});
 
   // This function updates the transform origin based on mouse position
-  const handleMouseMove = (any e) => {
+  const handleMouseMove = (e: any) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
     const x = ((e.pageX - left) / width) * 100;
     const y = ((e.pageY - top) / height) * 100;
@@ -33,7 +33,7 @@ const HeroSection = () => {
         style={style}
         className="text-center px-6 pt-8 lg:px-8  p-12  bg-hero-pattern-3 opacity-65 hover:opacity-100 active:scale-300 cursor-pointer transition duration-700 ease-in-out z-10 lg:h-128 sm:h-screen w-full object-cover bg-cover bg-no-repeat relative"
       />
-         <div className=" absolute top-0 w-full text-center px-6 pt-8 lg:px-8  p-12  ">
+      <div className=" absolute top-0 w-full text-center px-6 pt-8 lg:px-8  p-12  ">
         <div className="  flex flex-col-reverse sm:flex-row sm:justify-start gap-8">
 
 
@@ -44,10 +44,10 @@ const HeroSection = () => {
           </div>
 
         </div>
-  
-          <h2 className="relative z-40 ext-dark mb-10 text-4xl font-semibold" style={{ display: 'inline-block', marginTop:'30px' }}> Local expertise, global technology <br />
-            Empower Algerian industries with <br />
-            tailored AI solutions</h2>
+
+        <h2 className="relative z-40 ext-dark mb-10 text-4xl font-semibold" style={{ display: 'inline-block', marginTop: '30px' }}> Local expertise, global technology <br />
+          Empower Algerian industries with <br />
+          tailored AI solutions</h2>
 
 
 
