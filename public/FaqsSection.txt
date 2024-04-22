@@ -1,0 +1,53 @@
+"use client";
+
+import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import { Disclosure } from "@headlessui/react";
+import { MinusCircleIcon } from "@heroicons/react/24/outline";
+import { PlusCircleIcon } from "@heroicons/react/24/outline";
+import React from "react";
+import SectionHeader from "../common/SectionHeader";
+import SectionLayout from "../common/SectionLayout";
+import { faqs } from "@/data/texts/faqs";
+
+const FaqsSection = () => {
+  return (
+    <div id="faqs">
+      <SectionLayout>
+        <SectionHeader
+          name={"Q&A"}
+          title={"Frequently asked questions"}
+          description={""}
+        />
+        <div className="mx-auto w-full max-w-4xl rounded-3xl bg-white">
+          <div className="divide-y  divide-gray-200 ">
+            {faqs.map((faq) => (
+              <Disclosure key={faq.id}>
+                {({ open }) => (
+                  <div>
+                    <Disclosure.Button
+                      className={`flex w-full rounded-md justify-between hover:bg-gray-100 px-4 py-4 text-left text-lg font-medium focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75
+                  `}
+                    >
+                      <span>{faq.question}</span>
+
+                      {open ? (
+                        <MinusCircleIcon className={"h-6 w-6 text-gray-400"} />
+                      ) : (
+                        <PlusCircleIcon className={"h-7 w-6 text-gray-400"} />
+                      )}
+                    </Disclosure.Button>
+                    <Disclosure.Panel className="px-8 py-4 text-md text-gray-500">
+                      {faq.answer}
+                    </Disclosure.Panel>
+                  </div>
+                )}
+              </Disclosure>
+            ))}
+          </div>
+        </div>
+      </SectionLayout>
+    </div>
+  );
+};
+
+export default FaqsSection;
