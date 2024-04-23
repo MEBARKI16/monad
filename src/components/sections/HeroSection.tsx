@@ -37,7 +37,7 @@ const HeroSection = () => {
         <div className="  flex flex-col-reverse sm:flex-row sm:justify-start gap-8">
 
 
-          <div className="z-40 mt-20 relative justify-start gap-x-6">
+          <div className="z-40 mt-20 relative justify-start gap-x-6 hidden">
             <motion.div {...fadeInMotion} {...{ delay: 1 }}>
               <ChatBotCard />
             </motion.div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
 
         </div>
 
-        <h2 className="relative z-40 ext-dark mb-10 text-4xl font-semibold" style={{ display: 'inline-block', marginTop: '30px' }}> Local expertise, global technology <br />
+        <h2 className="relative z-40 ext-dark text-4xl font-semibold" style={{ display: 'inline-block', marginTop: '15rem' }}> Local expertise, global technology <br />
           Empower Algerian industries with <br />
           tailored AI solutions</h2>
 
