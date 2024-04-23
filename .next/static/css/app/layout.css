@@ -26168,9 +26168,6 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -26209,9 +26206,6 @@ video {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-16 {
-  margin-top: 4rem;
 }
 .block {
   display: block;

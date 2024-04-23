@@ -13,10 +13,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        process.env.NEXT_PUBLIC_SERVICE_ID ?? "",
-        process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
+        "service_xvf2wk7",
+        "template_607qegx",
         e.target,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY ?? ""
+        "jJkLL4glKofAEYYYB"
       )
       .then(() => {
         alert("Email sent successfully!");
